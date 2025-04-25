@@ -79,13 +79,6 @@ build/reports/tests/test/index.html
 ```
 ---
 
-## 📄 라이선스
-
-이 프로젝트는 [MIT License](LICENSE)를 따릅니다.  
-자유롭게 사용, 수정, 배포가 가능하며, 사용 시 라이선스 내용을 포함해 주세요.
-
----
-
 ## 🙌 기여
 
 Pull Request, 이슈 등록 모두 환영합니다!  
