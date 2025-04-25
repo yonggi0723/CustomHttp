@@ -39,4 +39,37 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
 }
+```
+---
+
+## 📦 사용 예제
+
+다음은 `CustomHttpClient`를 사용하여 GET 요청을 보내는 예제입니다:
+
+```kotlin
+val client = CustomHttpClient()
+val request = HttpRequest(
+    url = "https://api.example.com/data",
+    method = HttpMethod.GET,
+    headers = mapOf("Authorization" to "Bearer your_token"),
+    timeout = 5000
+)
+
+val response = client.execute(request)
+println("Status Code: ${response.statusCode}")
+println("Response Body: ${response.body}")
+```
+---
+
+## ✅ 테스트
+
+`CustomHttpClientTest.kt` 파일에 JUnit 기반 테스트가 포함되어 있습니다.  
+테스트를 실행하려면 다음 명령어를 사용하세요:
+
+```bash
+./gradlew test
+```
+테스트 결과는 아래 경로에서 확인할 수 있습니다:
+```bash
+build/reports/tests/test/index.html
 
